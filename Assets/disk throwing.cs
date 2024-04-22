@@ -1,63 +1,123 @@
 using UnityEngine;
 
-public class DiskThrowing : MonoBehaviour
+public class diskthrowing : MonoBehaviour
 {
-    public Rigidbody ringRigidbody; // Assign the Rigidbody of the ring in the inspector
-    public Transform anchorPoint; // Assign the anchor point transform in the inspector
-    public float forceMultiplier = 10.0f; // Adjust the force multiplier to get the desired swing strength
+    private GameObject Ball;
 
-    private FixedJoint fixedJoint;
-    private bool isSwinging = false;
+    float startTime, endTime, swipeDistance, swipeTime;
+    private Vector2 startPos;
+    private Vector2 endPos;
 
+    public float MinSwipDist = 0;
+    private float BallVelocity = 0;
+    private float BallSpeed = 0;
+    public float MaxBallSpeed = 350;
+    private Vector3 angle;
+
+    private bool thrown, holding;
+    private Vector3 newPosition;
+    Rigidbody rb;
+
+    // Start is called before the first frame update
     void Start()
     {
-        // Add a FixedJoint dynamically and configure it
-        fixedJoint = ringRigidbody.gameObject.AddComponent<FixedJoint>();
-        fixedJoint.connectedBody = anchorPoint.GetComponent<Rigidbody>(); // Connect to the anchor point's Rigidbody
-        fixedJoint.anchor = Vector3.zero;
-        fixedJoint.axis = Vector3.forward; // Set the axis according to your game setup
+        setupBall();
     }
 
-    void Update()
+    void setupBall()
     {
-        // Check for input to start swinging
-        if (Input.GetMouseButtonDown(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began))
-        {
-            isSwinging = true;
-        }
+        GameObject _ball = GameObject.FindGameObjectWithTag("Player");
+        Ball = _ball;
+        rb = Ball.GetComponent<Rigidbody>();
+        ResetBall();
+    }
 
-        // Check for input to release the ring
-        if (Input.GetMouseButtonUp(0) || (Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Ended))
+    void ResetBall()
+    {
+        angle = Vector3.zero;
+        endPos = Vector2.zero;
+        startPos = Vector2.zero;
+        BallSpeed = 0;
+        startTime = 0;
+        endTime = 0;
+        swipeDistance = 0;
+        swipeTime = 0;
+        thrown = holding = false;
+        rb.velocity = Vector3.zero;
+        rb.useGravity = false;
+        Ball.transform.position = transform.position;
+    }
+
+    void PickupBall()
+    {
+        Vector3 mousePos = Input.mousePosition;
+        mousePos.z = Camera.main.nearClipPlane * 5f;
+        newPosition = Camera.main.ScreenToWorldPoint(mousePos);
+        Ball.transform.localPosition = Vector3.Lerp(Ball.transform.localPosition, newPosition, 80f * Time.deltaTime);
+    }
+
+    private void Update()
+    {
+        if (holding)
+            PickupBall();
+
+        if (thrown)
+            return;
+
+        if (Input.GetMouseButtonDown(0))
         {
-            if (isSwinging)
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit _hit;
+
+            if (Physics.Raycast(ray, out _hit, 100f))
             {
-                ReleaseRing();
+                if (_hit.transform == Ball.transform)
+                {
+                    startTime = Time.time;
+                    startPos = Input.mousePosition;
+                    holding = true;
+                }
             }
         }
-    }
-
-    private void FixedUpdate()
-    {
-        if (isSwinging)
+        else if (Input.GetMouseButtonUp(0))
         {
-            // Get the mouse position or touch position in 3D space
-            Vector3 targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 10.0f));
+            endTime = Time.time;
+            endPos = Input.mousePosition;
+            swipeDistance = (endPos - startPos).magnitude;
+            swipeTime = endTime - startTime;
 
-            // Calculate the direction towards the target position
-            Vector3 direction = (targetPosition - ringRigidbody.position).normalized;
-
-            // Apply force in the forward direction (in relation to the ring's orientation)
-            Vector3 force = ringRigidbody.transform.forward * forceMultiplier;
-
-            // Apply force to the ring
-            ringRigidbody.AddForce(force, ForceMode.Force);
+            if (swipeTime < 0.5f && swipeDistance > 30f)
+            {
+                //throw ball
+                CalSpeed();
+                CalAngle();
+                rb.AddForce(new Vector3((angle.x * BallSpeed), (angle.y * BallSpeed / 3), (angle.z * BallSpeed) * 2));
+                rb.useGravity = true;
+                holding = false;
+                thrown = true;
+                Invoke("ResetBall", 4f);
+            }
+            else
+                ResetBall();
         }
     }
 
-    private void ReleaseRing()
+    private void CalAngle()
     {
-        // Destroy the fixed joint to release the ring
-        Destroy(fixedJoint);
-        isSwinging = false;
+        angle = Camera.main.ScreenToWorldPoint(new Vector3(endPos.x, endPos.y + 50f, (Camera.main.nearClipPlane + 5)));
+    }
+
+    void CalSpeed()
+    {
+        if (swipeTime > 0)
+            BallVelocity = swipeDistance / (swipeDistance - swipeTime);
+
+        BallSpeed = BallVelocity * 40;
+
+        if (BallSpeed <= MaxBallSpeed)
+        {
+            BallSpeed = MaxBallSpeed;
+        }
+        swipeTime = 0;
     }
 }
