@@ -1838,7 +1838,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MinSwipDist: 0
-  MaxBallSpeed: 2
+  MaxBallSpeed: 25
 --- !u!64 &1919016252
 MeshCollider:
   m_ObjectHideFlags: 0

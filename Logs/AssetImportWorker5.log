@@ -1,0 +1,537 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.19f1 (244b723c30a6) revision 2378610'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'en' Physical Memory: 16003 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker5
+-projectPath
+C:/Users/YASEEN RAJA/Ring Toss Royale
+-logFile
+Logs/AssetImportWorker5.log
+-srvPort
+54233
+Successfully changed project path to: C:/Users/YASEEN RAJA/Ring Toss Royale
+C:/Users/YASEEN RAJA/Ring Toss Royale
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [32724] Host "[IP] 192.168.18.26 [Port] 0 [Flags] 2 [Guid] 3931331075 [EditorId] 3931331075 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HPHSOG42) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [32724] Host "[IP] 192.168.18.26 [Port] 0 [Flags] 2 [Guid] 3931331075 [EditorId] 3931331075 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HPHSOG42) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 19 workers.
+Refreshing native plugins compatible for Editor in 7.30 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.19f1 (244b723c30a6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/YASEEN RAJA/Ring Toss Royale/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   31.0.15.5212
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005980 seconds.
+- Loaded All Assemblies, in  0.243 seconds
+Native extension for WindowsStandalone target not found
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 220 ms
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 701ms
+	BeginReloadAssembly (79ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (40ms)
+	LoadAllAssembliesAndSetupDomain (92ms)
+		LoadAssemblies (77ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (89ms)
+				TypeCache.ScanAssembly (81ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (460ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (419ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (312ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (31ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.567 seconds
+Refreshing native plugins compatible for Editor in 3.53 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.407 seconds
+Domain Reload Profiling: 971ms
+	BeginReloadAssembly (114ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (389ms)
+		LoadAssemblies (302ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (152ms)
+			TypeCache.Refresh (132ms)
+				TypeCache.ScanAssembly (116ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (407ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (289ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (41ms)
+			ProcessInitializeOnLoadAttributes (200ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 4.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3223 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (62.7 KB). Loaded Objects now: 3677.
+Memory consumption went from 134.3 MB to 134.2 MB.
+Total: 3.509700 ms (FindLiveObjects: 0.284000 ms CreateObjectMapping: 0.108900 ms MarkObjects: 3.025200 ms  DeleteObjects: 0.090400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 6d391050e5a25f67b0a2c618074f2cd9 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 177341.722213 seconds.
+  path: Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_05.png
+  artifactKey: Guid(3c5cdc1550991244c99d1df83c9e2e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_05.png using Guid(3c5cdc1550991244c99d1df83c9e2e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9a2c59b9d9da281a24964cfaf971210') in 0.079126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_23.png
+  artifactKey: Guid(fc68860d4b9c8094a8c9551df0874c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_23.png using Guid(fc68860d4b9c8094a8c9551df0874c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7737677763e8dcbd74b167e5c9671632') in 0.033838 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_21.png
+  artifactKey: Guid(f06029d387c60e04b90defc1e65b2b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_21.png using Guid(f06029d387c60e04b90defc1e65b2b92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b4448c653065641808d6f2dc2f26461') in 0.036998 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_08.png
+  artifactKey: Guid(e4fc6f401bbbfce4e84f72ecff21be37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 2 (Square Purple)/ButtonsStyle2_08.png using Guid(e4fc6f401bbbfce4e84f72ecff21be37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f19630e6178f2bf7aa3206b0ada52d0') in 0.023880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.663534 seconds.
+  path: Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_05.png
+  artifactKey: Guid(a4a66d5385fa0e94cb470ad21e57ba05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_05.png using Guid(a4a66d5385fa0e94cb470ad21e57ba05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad035aecb8014045a22c8b3330643f29') in 0.036277 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_17.png
+  artifactKey: Guid(3efea8c302d7bd540956b3cd7fbc056e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_17.png using Guid(3efea8c302d7bd540956b3cd7fbc056e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abdeb0d4fe4a438709c25585aab44dc') in 0.023180 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_18.png
+  artifactKey: Guid(69127940d857e764e995eb115dc8f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_18.png using Guid(69127940d857e764e995eb115dc8f10a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c9361160d73a5d5efcbb325d396de4c') in 0.020321 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_20.png
+  artifactKey: Guid(f37854832f89e90469ec2c558dbff79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_20.png using Guid(f37854832f89e90469ec2c558dbff79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94327af4e65b2fac17fd53eec6c0f26c') in 0.021023 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_14.png
+  artifactKey: Guid(b0f42b91f3b87e2408b748aefcdf7ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 3 (Rounded Pink)/ButtonsStyle3_14.png using Guid(b0f42b91f3b87e2408b748aefcdf7ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7befbc6d5061fdc6cbb9927ed01c399f') in 0.021773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.598769 seconds.
+  path: Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_05.png
+  artifactKey: Guid(1962524212ef3494cae3b200f8559556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_05.png using Guid(1962524212ef3494cae3b200f8559556) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bce57cb9b3035e0d66e1fbc03db102') in 0.024161 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_15.png
+  artifactKey: Guid(5289e686015fa0140a159eedec2d1590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_15.png using Guid(5289e686015fa0140a159eedec2d1590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b8110a09cb05f8b53e41f136fa2632') in 0.019120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_26.png
+  artifactKey: Guid(0d3465e8d7bf7f548a20dbde2b03c0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_26.png using Guid(0d3465e8d7bf7f548a20dbde2b03c0b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d943542f337b49180aa5750aa9d7820') in 0.023263 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_23.png
+  artifactKey: Guid(c47b2588e354b9846b6a86484b01c372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_23.png using Guid(c47b2588e354b9846b6a86484b01c372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d2d954a634a8e40675f6f7fbd7b9c55') in 0.022024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_25.png
+  artifactKey: Guid(821908326398b3d439118d5987df04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 4 (Square Pink)/ButtonsStyle4_25.png using Guid(821908326398b3d439118d5987df04c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4d3d9e0ced0228332abbdb58978bdfb') in 0.021453 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.494691 seconds.
+  path: Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_05.png
+  artifactKey: Guid(a6501bd3060837643997495eff8e5280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_05.png using Guid(a6501bd3060837643997495eff8e5280) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44ca33cc78afe4140dd7a9bfd200384') in 0.021163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_26.png
+  artifactKey: Guid(5b7abee8b31de6e4f96bf409a635d1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_26.png using Guid(5b7abee8b31de6e4f96bf409a635d1d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76a2c6f19c2ba80bae4569f1e22ef45b') in 0.023177 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_11.png
+  artifactKey: Guid(fb6cd26a70c0e9e4aa620c0cb01c7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_11.png using Guid(fb6cd26a70c0e9e4aa620c0cb01c7da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87b77664c17bb5fb447760ffdcb0ab0a') in 0.020217 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_08.png
+  artifactKey: Guid(3bd1830b4c4fb894d8d44eed0e516d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_08.png using Guid(3bd1830b4c4fb894d8d44eed0e516d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe8c06ca98bd783edd551aa6dc9a31f') in 0.022472 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_22.png
+  artifactKey: Guid(03f751de83b3e22498f3964d3dad4fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 5 (Rounded Green)/ButtonsStyle5_22.png using Guid(03f751de83b3e22498f3964d3dad4fe5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc589ca065640d23fd30e43d6b2a789') in 0.023076 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.243527 seconds.
+  path: Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_05.png
+  artifactKey: Guid(7805f351ce9f31845bf1f086e323baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_05.png using Guid(7805f351ce9f31845bf1f086e323baa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da2f3fade2762281868e6d6592e72247') in 0.031564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_06.png
+  artifactKey: Guid(4721b7532f0f5d842a70eb7e0859ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_06.png using Guid(4721b7532f0f5d842a70eb7e0859ed1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdfd98277601c0a27b5f2fb59085f3b0') in 0.021539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_24.png
+  artifactKey: Guid(6d1e04ea74f29f24a8e5b593b46101d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_24.png using Guid(6d1e04ea74f29f24a8e5b593b46101d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59000538cb48ab4c419a1068cafcb666') in 0.022455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_09.png
+  artifactKey: Guid(fe78d82ace1e99e4c9a60654fe0e0605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_09.png using Guid(fe78d82ace1e99e4c9a60654fe0e0605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45dd0fc94502915878c3a20fb299cb52') in 0.021764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_11.png
+  artifactKey: Guid(eb1e06fe938f4b44f851bd59dbf884ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 14 (Square Gray)/ButtonsStyle14_11.png using Guid(eb1e06fe938f4b44f851bd59dbf884ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e4be082c17f8fa91daf45eb336f272e') in 0.024487 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.409796 seconds.
+  path: Assets/Simple Buttons/Icons/Icon_06.gif
+  artifactKey: Guid(f56cfaaafbdb76142b2daa2a2bcbaaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Icons/Icon_06.gif using Guid(f56cfaaafbdb76142b2daa2a2bcbaaa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db2f78e68bace214f097313730f5fa5') in 0.023564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Simple Buttons/Icons/Icon_16.gif
+  artifactKey: Guid(4a5cf0eacdee74c4dad5e49c69997b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Icons/Icon_16.gif using Guid(4a5cf0eacdee74c4dad5e49c69997b9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe189d39a1196bc04943bbd8fce7aef7') in 0.022785 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Simple Buttons/Icons/Icon_26.png
+  artifactKey: Guid(0ffe7ac8ec40988499e8033cfa1f1a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Icons/Icon_26.png using Guid(0ffe7ac8ec40988499e8033cfa1f1a4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fda86f6ee92f54ca553aa50bda063a68') in 0.022121 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Buttons/Icons/Icon_20.gif
+  artifactKey: Guid(971a0bb560b7a6a4390594a07bc34767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Icons/Icon_20.gif using Guid(971a0bb560b7a6a4390594a07bc34767) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57d7d233c404e8ff1cb2c9885252402f') in 0.022482 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Simple Buttons/Icons/Icon_09.gif
+  artifactKey: Guid(fbb6e5e0aa59b1f46864354fc693e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Icons/Icon_09.gif using Guid(fbb6e5e0aa59b1f46864354fc693e42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e83b8c383989145ab92725362e9d51bf') in 0.022855 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 278.769609 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_02.png
+  artifactKey: Guid(af2513c34a7371c459516acc8c793232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_02.png using Guid(af2513c34a7371c459516acc8c793232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc174b992c09fb0b1a6f354fe5843432') in 0.022366 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_14.png
+  artifactKey: Guid(a3296cdb25cf4514e97c6f89a393de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_14.png using Guid(a3296cdb25cf4514e97c6f89a393de8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d5b512cab80e91ea1a9a8f90e4038d1') in 0.025063 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_09.png
+  artifactKey: Guid(902bfc577b6e85e4c840ba73a0bd9509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_09.png using Guid(902bfc577b6e85e4c840ba73a0bd9509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd66b9f293cc8d0fdfb94185e44d82a11') in 0.025842 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_12.png
+  artifactKey: Guid(39f89eeba29c0a24f8ccc5d342d6b7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_12.png using Guid(39f89eeba29c0a24f8ccc5d342d6b7a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0104908d3c16976176630fb9fecb708') in 0.023717 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_24.png
+  artifactKey: Guid(305d32daf9f44794d8a18b5775b63e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_24.png using Guid(305d32daf9f44794d8a18b5775b63e01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d0992f51267c04299c6c75cacd92e5c') in 0.026805 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_19.png
+  artifactKey: Guid(cad9d120e1a74e24e8ae73cbb84b7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_19.png using Guid(cad9d120e1a74e24e8ae73cbb84b7bd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '392224e366bf97acce31da5490f495f1') in 0.024265 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_25.png
+  artifactKey: Guid(59ac35daa1e5ef243bf043bfc50d7702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_25.png using Guid(59ac35daa1e5ef243bf043bfc50d7702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b87dadc82dacf51d59e7d79ea9cb3e') in 0.023447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_03.png
+  artifactKey: Guid(06651342c38834e4e9db2134d566a069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_03.png using Guid(06651342c38834e4e9db2134d566a069) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f04df775d76189abd917df343f0cef') in 0.021807 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_20.png
+  artifactKey: Guid(1236a8c5eae55cd4b8aeb63d7c9ead22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_20.png using Guid(1236a8c5eae55cd4b8aeb63d7c9ead22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccabe006bd18f0e7fcf4c653d2197ad0') in 0.023956 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_10.png
+  artifactKey: Guid(a363ef1163b8df64dab2c971cd9cad5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_10.png using Guid(a363ef1163b8df64dab2c971cd9cad5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7dd64c94d88c4008702c39048d4087') in 0.024214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_26.png
+  artifactKey: Guid(fb046daefe74eb440a08873cede85e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_26.png using Guid(fb046daefe74eb440a08873cede85e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98ec471db610b23c813df321627c64cb') in 0.019940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_13.png
+  artifactKey: Guid(f600ea16578248d4ea3dabcfb65ac55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_13.png using Guid(f600ea16578248d4ea3dabcfb65ac55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f88b2970f41deba143372a6c72378ba0') in 0.020955 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_17.png
+  artifactKey: Guid(175d4903cdf3baa44b0bba9ca532fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Simple Buttons/Buttons Style 13 (Rounded Gray)/ButtonsStyle13_17.png using Guid(175d4903cdf3baa44b0bba9ca532fb7c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc22aa8b19b55be48a964194fad4411b') in 0.019028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
