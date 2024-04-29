@@ -60,9 +60,11 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.19f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\disk.cs" />
+    <Compile Include="Assets\scripts\loginRegistrationscript.cs" />
+    <Compile Include="Assets\scripts\DBManager.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\disk throwing.cs" />
-    <Compile Include="Assets\disk.cs" />
+    <Compile Include="Assets\scripts\disk throwing.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
