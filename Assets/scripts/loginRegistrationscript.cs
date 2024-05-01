@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Collections;
+using System;
 
 public class loginRegistrationscript : MonoBehaviour
 {
@@ -56,17 +57,32 @@ public class loginRegistrationscript : MonoBehaviour
         }
         else
         {
-            if (www.downloadHandler.text.Trim() == "0")
+            string responseText = www.downloadHandler.text;
+            string[] data = responseText.Split('\t');
+            if (data[0] == "0")
             {
-                Debug.Log("User login successful.");
-                DBManager.username = Logemailfield.text;
-                // Add any other actions for successful login
-                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                if (int.TryParse(data[1], out int P_ID))
+                {
+                    Debug.Log("User login successful. P_ID: " + P_ID);
+                    DBManager.username = Logemailfield.text;
+                    DBManager.P_ID = P_ID;
+                    // Add any other actions for successful login
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                }
+                else
+                {
+                    Debug.LogError("Failed to parse P_ID from server response. Server response: " + responseText);
+                }
+            }
+            else if (data.Length >= 1 && data[0] == "0")
+            {
+                Debug.Log("User login failed. Error: " + responseText);
             }
             else
             {
-                Debug.Log("User login failed. Error: " + www.downloadHandler.text);
+                Debug.LogError("Unexpected server response: " + responseText);
             }
+
         }
 
     }

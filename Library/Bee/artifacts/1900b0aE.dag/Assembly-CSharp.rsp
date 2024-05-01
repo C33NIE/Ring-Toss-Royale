@@ -368,6 +368,7 @@
 "Assets/scripts/disk throwing.cs"
 "Assets/scripts/disk.cs"
 "Assets/scripts/loginRegistrationscript.cs"
+"Assets/scripts/MainMenu.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 
