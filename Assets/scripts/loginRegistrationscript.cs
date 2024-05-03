@@ -45,48 +45,51 @@ public class loginRegistrationscript : MonoBehaviour
 
     public IEnumerator login()
     {
-        WWWForm form = new WWWForm();
-        form.AddField("email", Logemailfield.text);
-        form.AddField("password", Logpasswordfield.text);
-        UnityWebRequest www = UnityWebRequest.Post("http://localhost/unity/login.php", form);
-        yield return www.SendWebRequest();
+            WWWForm form = new WWWForm();
+            form.AddField("email", Logemailfield.text);
+            form.AddField("password", Logpasswordfield.text);
+            UnityWebRequest www = UnityWebRequest.Post("http://localhost/unity/login.php", form);
+            yield return www.SendWebRequest();
 
-        if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
-        {
-            Debug.LogError("Error: " + www.error);
-        }
-        else
-        {
-            string responseText = www.downloadHandler.text;
-            string[] data = responseText.Split('\t');
-            if (data[0] == "0")
+            if (www.result == UnityWebRequest.Result.ConnectionError || www.result == UnityWebRequest.Result.ProtocolError)
             {
-                if (int.TryParse(data[1], out int P_ID))
-                {
-                    Debug.Log("User login successful. P_ID: " + P_ID);
-                    DBManager.username = Logemailfield.text;
-                    DBManager.P_ID = P_ID;
-                    // Add any other actions for successful login
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-                }
-                else
-                {
-                    Debug.LogError("Failed to parse P_ID from server response. Server response: " + responseText);
-                }
-            }
-            else if (data.Length >= 1 && data[0] == "0")
-            {
-                Debug.Log("User login failed. Error: " + responseText);
+                Debug.LogError("Error: " + www.error);
             }
             else
             {
-                Debug.LogError("Unexpected server response: " + responseText);
+                string responseText = www.downloadHandler.text;
+                string[] data = responseText.Split('\t');
+                if (data[0] == "0")
+                {
+                    if (int.TryParse(data[1], out int P_ID))
+                    {
+                        Debug.Log("User login successful. P_ID: " + P_ID);
+                        DBManager.username = Logemailfield.text;
+                        DBManager.P_ID = P_ID;
+                        DBManager.username = data[2];
+                        DBManager.wins = int.Parse(data[3]);
+                        DBManager.losses = int.Parse(data[4]);
+                        DBManager.most_used_ring = data[5];
+
+                        // Add any other actions for successful login
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                    }
+                    else
+                    {
+                        Debug.LogError("Failed to parse P_ID from server response. Server response: " + responseText);
+                    }
+                }
+                else if (data.Length >= 2 && data[0] != "0")
+                {
+                    Debug.Log("User login failed. Error: " + responseText);
+                }
+                else
+                {
+                    Debug.LogError("Unexpected server response: " + responseText);
+                }
             }
-
-        }
-
     }
-
+    
 
     public IEnumerator Register()
     {

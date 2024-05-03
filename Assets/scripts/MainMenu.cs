@@ -9,6 +9,12 @@ public class MainMenu : MonoBehaviour
 {
     //Panels
     public GameObject feedbackPanel;
+    public GameObject profilepanel;
+
+    public TMP_Text playerNameText;
+    public TMP_Text winsText;
+    public TMP_Text lossesText;
+    public TMP_Text mostUsedRingText;
 
     //inputfield
     public TMP_InputField feedinput;
@@ -23,8 +29,14 @@ public class MainMenu : MonoBehaviour
         feedbackPanel.SetActive(true);
     }
 
+    public void ShowProfilepanel()
+    {
+        profilepanel.SetActive(true);
+    }
+
     public void back()
-    { feedbackPanel.SetActive(false);}
+    { feedbackPanel.SetActive(false);
+      profilepanel.SetActive(false); }
 
 
     public void playbuttonpressed()
@@ -50,5 +62,20 @@ public class MainMenu : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        // Ensure all UI Text components are assigned in the Inspector
+        if (playerNameText == null || winsText == null || lossesText == null || mostUsedRingText == null)
+        {
+            Debug.LogError("One or more UI Text components are not assigned!");
+            return;
+        }
+
+        // Display player details from DBManager
+        playerNameText.text = DBManager.username;
+        winsText.text = "Wins: " + DBManager.wins.ToString();
+        lossesText.text = "Losses: " + DBManager.losses.ToString();
+        mostUsedRingText.text = "MUR: " + DBManager.most_used_ring;
+    }
 
 }
