@@ -109,4 +109,7 @@ public class disk : MonoBehaviour
         }
         swipeTime = 0;
     }
+    
+
+
 }
