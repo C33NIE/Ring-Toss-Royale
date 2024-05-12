@@ -7,7 +7,7 @@ public class DBManager : MonoBehaviour
     public static int P_ID;
     public static string username;
     public static int wins,losses;
-    public static string most_used_ring;
+    public static int ringID;
 
     public static bool LoggedIn { get { return username != null; } }
 

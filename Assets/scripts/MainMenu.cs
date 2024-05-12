@@ -4,13 +4,17 @@ using UnityEngine;
 using UnityEngine.Networking;
 using TMPro;
 using System;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     //Panels
     public GameObject feedbackPanel;
     public GameObject profilepanel;
+    public GameObject shopPanel;
 
+
+    //texts
     public TMP_Text playerNameText;
     public TMP_Text winsText;
     public TMP_Text lossesText;
@@ -18,6 +22,7 @@ public class MainMenu : MonoBehaviour
 
     //inputfield
     public TMP_InputField feedinput;
+
 
     public void feedbacksender()
     {
@@ -34,9 +39,15 @@ public class MainMenu : MonoBehaviour
         profilepanel.SetActive(true);
     }
 
+    public void ShowshopPanel() { 
+    shopPanel.SetActive(true);
+    }
+
     public void back()
     { feedbackPanel.SetActive(false);
-      profilepanel.SetActive(false); }
+      profilepanel.SetActive(false);
+      shopPanel.SetActive(false);  
+    }
 
 
     public void playbuttonpressed()
@@ -64,6 +75,7 @@ public class MainMenu : MonoBehaviour
 
     void Start()
     {
+
         // Ensure all UI Text components are assigned in the Inspector
         if (playerNameText == null || winsText == null || lossesText == null || mostUsedRingText == null)
         {
@@ -75,7 +87,5 @@ public class MainMenu : MonoBehaviour
         playerNameText.text = DBManager.username;
         winsText.text = "Wins: " + DBManager.wins.ToString();
         lossesText.text = "Losses: " + DBManager.losses.ToString();
-        mostUsedRingText.text = "MUR: " + DBManager.most_used_ring;
     }
-
 }

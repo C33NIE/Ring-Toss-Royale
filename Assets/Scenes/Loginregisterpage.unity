@@ -2854,6 +2854,7 @@ MonoBehaviour:
   loginButton: {fileID: 1489931060}
   RegistrationButton: {fileID: 1522009985}
   player_display: {fileID: 0}
+  img: {fileID: 384473758}
 --- !u!1 &1021633010
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,6 +4,8 @@ using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Collections;
 using System;
+using JetBrains.Annotations;
+using System.Linq;
 
 public class loginRegistrationscript : MonoBehaviour
 {
@@ -22,7 +24,9 @@ public class loginRegistrationscript : MonoBehaviour
     public Button RegistrationButton;
 
     //texts
-    public Text player_display; 
+    public Text player_display;
+
+    public Image img;
 
     private void Start()
     {
@@ -69,10 +73,12 @@ public class loginRegistrationscript : MonoBehaviour
                         DBManager.username = data[2];
                         DBManager.wins = int.Parse(data[3]);
                         DBManager.losses = int.Parse(data[4]);
-                        DBManager.most_used_ring = data[5];
+                        DBManager.ringID= int.Parse(data[5]);
+        
 
-                        // Add any other actions for successful login
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+                    // Add any other actions for successful login
+                         UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+
                     }
                     else
                     {
@@ -89,7 +95,51 @@ public class loginRegistrationscript : MonoBehaviour
                 }
             }
     }
-    
+
+    /*public IEnumerator getRing(string ItemID)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("RingID", ItemID);
+
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost/unity/getring.php", form);
+        yield return www.SendWebRequest();
+
+        if (www.isNetworkError || www.isHttpError)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            byte[] bytes = www.downloadHandler.data;
+
+            Debug.Log("Image data length: " + bytes.Length);
+
+            Texture2D texture = new Texture2D(10, 10);
+            texture.LoadImage(bytes);
+
+            Debug.Log("Texture size: " + texture.width + "x" + texture.height);
+
+            // Check pixel values
+            Color32[] pixels = texture.GetPixels32();
+            foreach (Color32 pixel in pixels)
+            {
+                if (pixel.a != 0)
+                {
+                    Debug.Log("Pixel color: " + pixel);
+                    break;
+                }
+            }
+
+            Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0.5f, 0.5f));
+            // Set the currentRingSprite in DBManager
+            DBManager.currentRing = sprite;
+
+            img.sprite = DBManager.currentRing;
+        }
+    }*/
+
+
+
 
     public IEnumerator Register()
     {
