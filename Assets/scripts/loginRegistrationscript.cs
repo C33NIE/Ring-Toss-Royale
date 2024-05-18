@@ -68,7 +68,7 @@ public class loginRegistrationscript : MonoBehaviour
                     if (int.TryParse(data[1], out int P_ID))
                     {
                         Debug.Log("User login successful. P_ID: " + P_ID);
-                        DBManager.username = Logemailfield.text;
+               
                         DBManager.P_ID = P_ID;
                         DBManager.username = data[2];
                         DBManager.wins = int.Parse(data[3]);
