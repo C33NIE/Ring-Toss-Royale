@@ -1,0 +1,43 @@
+{
+  "name": "com.unity.adaptiveperformance.google.android",
+  "displayName": "Adaptive Performance Android",
+  "version": "1.1.2",
+  "unity": "2023.1",
+  "unityRelease": "0a16",
+  "description": "The Adaptive Performance Android package provides the Adaptive Performance subsystem for Android platforms and works in combination with Adaptive Performance. \n\nBy installing this package, you agree to the terms and conditions of the Unity End User License Agreement found under \"View licenses\" above.",
+  "keywords": [
+    "mobile",
+    "adaptive",
+    "performance",
+    "utility",
+    "utilities",
+    "core",
+    "google",
+    "ap",
+    "provider",
+    "subsystem",
+    "gamesdk",
+    "VRR",
+    "indexer",
+    "scaler",
+    "boost",
+    "profiles",
+    "cluster",
+    "clusterinfo"
+  ],
+  "dependencies": {
+    "com.unity.adaptiveperformance": "5.0.0"
+  },
+  "_upm": {
+    "changelog": "### Fixed\n* Fixed build error \"Frametiming does not contain a definition for 'cpumainthreadframetime' on Unity versions < 2022.1."
+  },
+  "upmCi": {
+    "footprint": "b7e346008c04253ffbeb43a990acfba95863abd9"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.adaptiveperformance.google.android@1.1/manual/index.html",
+  "repository": {
+    "url": "https://github.cds.internal.unity3d.com/unity/com.unity.adaptiveperformance.google.android.git",
+    "type": "git",
+    "revision": "b8925d66802c898156eb21333c37b4d00fd08956"
+  }
+}

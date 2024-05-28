@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Loginregisterpage.unity
     guid: b66f595c390fb9649b904095cf65366b
   - enabled: 1
@@ -13,9 +13,16 @@ EditorBuildSettings:
     guid: c850ee8c3b14cc8459e7e186857cf567
   - enabled: 1
     path: Assets/Scenes/main gameplay.unity
-    guid: e177a4f4caaa8a84eb13d6c44ce82bea
+    guid: 44a4ef75e8fabbc4ea1d26934b887f35
+  - enabled: 1
+    path: Assets/Scenes/MultiplayerMenu.unity
+    guid: c39afdff18cb98b4fad5a29c08699e7c
   m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000,
+      guid: e05305b4691ca7c4f959fb30060eada5, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6705580a1310cd840a2fd533c159aa68,
       type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: 8c9cddffc90064c4a8eb93026c10ec1f, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: 4eab765e671a6814192e834d433bde42, type: 2}

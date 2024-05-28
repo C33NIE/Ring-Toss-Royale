@@ -1,0 +1,11 @@
+{
+    "name": "Unity.AdaptivePerformance.Google.Android.Tests",
+    "references": [
+        "Unity.AdaptivePerformance.Google.Android"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
